@@ -5,6 +5,7 @@ import {
 import { App } from '../../App'
 import { Container } from '../../components/cometainer'
 import { DarkModeSwitch } from '../../components/Swich'
+import { DarkModeButton } from '../../components/Button'
 
 export default { title: 'Chakra-modal' }
 
@@ -35,7 +36,7 @@ export const BasicUsage = () => {
               </ModalFooter>
             </ModalContent>
           </Modal>
-
+          <DarkModeButton />
           <DarkModeSwitch />
         </Container>
       </App>

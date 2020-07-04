@@ -11,7 +11,11 @@ export const DarkModeSwitch = () => {
       right='1rem'
       color='green'
       isChecked={isDark}
-      onChange={toggleColorMode}
+      onChange={() => {
+        toggleColorMode()
+        console.log(colorMode)
+        console.log(toggleColorMode)
+      }}
     />
   )
 }
