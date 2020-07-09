@@ -14,9 +14,6 @@ export const StyleColorMode = () => {
   return (
     <>
       <ThemeProvider>
-        <Box flex='1' mb={4} bg={bgColor[colorMode]} color={color[colorMode]}>
-          This box's style will change based on the color mode.
-        </Box>
         <Button size='sm' onClick={() => { console.log(k) }}>
           Toggle Mode
         </Button>
