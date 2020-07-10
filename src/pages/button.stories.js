@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, ThemeProvider, ButtonGroup, Box,MdBuild,MdCall } from '@chakra-ui/core'
+import { Button, ThemeProvider, ButtonGroup, Box, MdBuild, MdCall } from '@chakra-ui/core'
 
 export default { title: 'Chakra-button' }
 
@@ -10,16 +10,16 @@ export const button = () => {
         <Box margin='0 auto'>
           <ButtonGroup spacing={4}>
             <Button variantColor='teal' variant='solid'>
-              Button
+							Button
             </Button>
             <Button variantColor='teal' variant='outline'>
-              Button
+							Button
             </Button>
             <Button variantColor='teal' variant='ghost'>
-              Button
+							Button
             </Button>
             <Button variantColor='teal' variant='link'>
-              Button
+							Button
             </Button>
           </ButtonGroup>
         </Box>
@@ -27,105 +27,105 @@ export const button = () => {
     </>
   )
 }
-// 一个绿色按钮 
-export const buttonOneGreen=()=>{
+// 一个绿色按钮
+export const buttonOneGreen = () => {
   return (
-	 <ThemeProvider>
-	     <Button variantColor="green">Button</Button>
-	 </ThemeProvider>
-	)
+    <ThemeProvider>
+      <Button variantColor='green'>Button</Button>
+    </ThemeProvider>
+  )
 }
 // 蓝色按钮组 Group
-export const buttonDifferent=()=>{
+export const buttonDifferent = () => {
   return (
-	 <ThemeProvider>
-	    <ButtonGroup spacing={10}>
-				<Button variantColor="teal" size="xs">
+    <ThemeProvider>
+      <ButtonGroup spacing={10}>
+        <Button variantColor='teal' size='xs'>
 					Button
-				</Button>
-				<Button variantColor="teal" size="sm">
+    </Button>
+        <Button variantColor='teal' size='sm'>
 					Button
-				</Button>
-				<Button variantColor="teal" size="md">
+    </Button>
+        <Button variantColor='teal' size='md'>
 					Button
-				</Button>
-				<Button variantColor="teal" size="lg">
-					Button
-				</Button>
-			</ButtonGroup>
-	 </ThemeProvider>
-	)
+    </Button>
+        <Button variantColor='teal' size='lg'>
+					Buttonhy
+    </Button>
+      </ButtonGroup>
+    </ThemeProvider>
+  )
 }
 // 不同效果的按钮组
-export const buttonDifferentEffect=()=>{
+export const buttonDifferentEffect = () => {
   return (
-	 <ThemeProvider>
-	    <ButtonGroup spacing={4}>
-				<Button variantColor="teal" variant="solid">
+    <ThemeProvider>
+      <ButtonGroup spacing={4}>
+        <Button variantColor='teal' variant='solid'>
 					Button
-				</Button>
-				<Button variantColor="teal" variant="outline">
+    </Button>
+        <Button variantColor='teal' variant='outline'>
 					Button
-				</Button>
-				<Button variantColor="teal" variant="ghost">
+    </Button>
+        <Button variantColor='teal' variant='ghost'>
 					Button
-				</Button>
-				<Button variantColor="teal" variant="link">
+    </Button>
+        <Button variantColor='teal' variant='link'>
 					Button
-				</Button>
-			</ButtonGroup>
-	 </ThemeProvider>
-	)
+    </Button>
+      </ButtonGroup>
+    </ThemeProvider>
+  )
 }
 // email图标按钮  前进按钮  左右位置
-export const buttonGoForward=()=>{
+export const buttonGoForward = () => {
   return (
-	 <ThemeProvider>
-	  <ButtonGroup spacing={4}>
-				<Button leftIcon="email" variantColor="teal" variant="solid">
+    <ThemeProvider>
+      <ButtonGroup spacing={4}>
+        <Button leftIcon='email' variantColor='teal' variant='solid'>
 					Email
-				</Button>
-				<Button rightIcon="arrow-forward" variantColor="teal" variant="outline">
+    </Button>
+        <Button rightIcon='arrow-forward' variantColor='teal' variant='outline'>
 					Call us
-				</Button>
-   </ButtonGroup>
-	 </ThemeProvider>
-	)
+    </Button>
+      </ButtonGroup>
+    </ThemeProvider>
+  )
 }
 
-//设置  电话  按钮  左右位置
-export const buttonPhoneSetting=()=>{
+// 设置  电话  按钮  左右位置
+export const buttonPhoneSetting = () => {
   return (
-	 <ThemeProvider>
-	 <ButtonGroup spacing={4}>
-  <Button leftIcon={MdBuild} variantColor="pink" variant="solid">
-    Settings
-  </Button>
-  <Button rightIcon={MdCall} variantColor="blue" variant="outline">
-    Call us
-  </Button>
-</ButtonGroup>
-	 </ThemeProvider>
-	)
+    <ThemeProvider>
+      <ButtonGroup spacing={4}>
+        <Button leftIcon={MdBuild} variantColor='pink' variant='solid'>
+					Settings
+    </Button>
+        <Button rightIcon={MdCall} variantColor='blue' variant='outline'>
+					Call us
+    </Button>
+      </ButtonGroup>
+    </ThemeProvider>
+  )
 }
 
-//提交加载
-export const buttonSubmitLoading=()=>{
+// 提交加载
+export const buttonSubmitLoading = () => {
   return (
-	 <ThemeProvider>
-				<ButtonGroup spacing={4}>
-				<Button isLoading variantColor="teal" variant="solid">
+    <ThemeProvider>
+      <ButtonGroup spacing={4}>
+        <Button isLoading variantColor='teal' variant='solid'>
 					Email
-				</Button>
-				<Button
-					isLoading
-					loadingText="Submitting"
-					variantColor="teal"
-					variant="outline"
-				>
+    </Button>
+        <Button
+          isLoading
+          loadingText='Submitting'
+          variantColor='teal'
+          variant='outline'
+        >
 					Submit
-				</Button>
-			</ButtonGroup>
-	 </ThemeProvider>
-	)
+    </Button>
+      </ButtonGroup>
+    </ThemeProvider>
+  )
 }
